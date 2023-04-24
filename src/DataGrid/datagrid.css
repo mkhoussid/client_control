@@ -1,215 +1,232 @@
+:root {
+	--red-bg: #ea3c3c;
+	--green-bg: #32c665;
+	--yellow-bg: #fdd14c;
+}
+
 * {
-  outline: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial", Arial, sans-serif;
+	outline: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Franklin Gothic Medium', 'Arial', Arial, sans-serif;
 }
 
 .typography {
-  font-size: 14px;
+	font-size: 14px;
 }
 
 .typography-secondary {
-  color: #7f8692;
+	color: #7f8692;
 }
 
 .typography-link {
-  color: #3984ff;
+	color: #3984ff;
 }
 
 .content-wrapper {
-  background-color: #f3f4f6;
-  width: fit-content;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  /* width: 100%; */
-  height: 100%;
-  overflow: auto;
+	background-color: #f3f4f6;
+	width: fit-content;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	/* width: 100%; */
+	height: 100%;
+	overflow: auto;
 }
 
 .datagrid-header-container {
-  display: flex;
-  width: 100%;
+	display: flex;
+	width: 100%;
 }
 
 .datagrid-header {
-  margin: 1rem;
+	margin: 1rem;
 }
 
 .datagrid-header-text {
-  cursor: pointer;
-  font-size: 2rem;
-  color: #8f96a2;
+	cursor: pointer;
+	font-size: 2rem;
+	color: #8f96a2;
 }
 
 .datagrid-header-text-active {
-  color: #3984ff;
+	color: #3984ff;
 }
 
 .datagrid-wrapper {
-  width: 100%;
-  height: 60vh;
-  overflow: auto;
+	width: 100%;
+	height: 60vh;
+	overflow: auto;
 }
 
 .datagrid {
-  border-collapse: collapse;
-  table-layout: fixed;
+	border-collapse: collapse;
+	table-layout: fixed;
 }
 
 .datagrid-columns-container {
-  border-bottom: 1px solid #c7cad1;
+	border-bottom: 1px solid #c7cad1;
 }
 
 .datagrid-column {
-  text-align: center;
-  font-weight: bold;
-  padding: 1rem;
+	text-align: center;
+	font-weight: bold;
+	padding: 1rem;
 }
 
 .datagrid-row {
-  text-align: center;
+	text-align: center;
 }
 
 .datagrid-row-cell {
-  padding: 1rem;
-  text-align: center;
-  color: #7f8692;
+	padding: 1rem;
+	text-align: center;
+	color: #7f8692;
 }
 
 .datagrid-row-status {
-  border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: inline-flex;
+	border-radius: 50%;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-flex;
 }
 
 .datagrid-row-status-0 {
-  background-color: #d92020;
+	background-color: #d92020;
 }
 
 .datagrid-row-status-1 {
-  background-color: #fdd14c;
+	background-color: var(--yellow-bg);
 }
 
 .datagrid-row-status-2 {
-  background-color: #32c665;
+	background-color: #32c665;
 }
 
 .datagrid-row-ticket {
-  border-radius: 0.5rem;
-  background-color: #ffffff;
-  padding: 1rem 2rem;
-  font-weight: bold;
-  font-size: 1.5rem;
-  border: 1px solid #c7cad1;
-  color: #000000;
+	border-radius: 0.5rem;
+	background-color: #ffffff;
+	padding: 1rem 2rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+	border: 1px solid #c7cad1;
+	color: #000000;
 }
 
 .datagrid-row-ticket-0 {
-  border: 1px solid #ea3c3c;
-  color: #ea3c3c;
+	border: 1px solid var(--red-bg);
+	color: var(--red-bg);
+}
+
+.datagrid-row-ticket-1 {
+	border: 1px solid var(--yellow-bg);
+}
+
+.datagrid-row-ticket-2 {
 }
 
 .datagrid-row-wait-time {
-  font-size: 2rem;
-  font-weight: bold;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 .datagrid-row-wait-time-0 {
-  color: #ea3c3c;
+	color: var(--red-bg);
 }
 
 .datagrid-row-wait-time-1 {
-  color: #f0b902;
+	color: #f0b902;
 }
 
 .datagrid-button {
-  background-color: #0062ff;
-  border-radius: 0.25rem;
-  padding: 1rem;
-  width: 7.5rem;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	background-color: #0062ff;
+	border-radius: 0.25rem;
+	padding: 1rem;
+	width: 7.5rem;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .datagrid-button:hover {
-  filter: brightness(120%);
+	filter: brightness(120%);
 }
 
 .datagrid-row-wrapper {
 }
 
 .datagrid-row-wrapper-min-width {
-  min-width: 12rem;
-  font-weight: 100;
+	min-width: 12rem;
+	font-weight: 100;
 }
 
 .tickets-in-queue {
-  color: #2fc063;
+	color: #2fc063;
 }
 
 .button-disabled {
-  background-color: #e5e7eb;
+	background-color: #e5e7eb;
+}
+
+.button-disable-button {
+	cursor: default;
 }
 
 .button-disable-button:hover {
-  filter: brightness(1);
+	filter: brightness(1);
 }
 
 .confirm-transfer-ticket-container {
-  display: flex;
-  padding: 0 1rem;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	padding: 0 1rem;
+	align-items: center;
+	justify-content: center;
 }
 
 .confirm-transfer-client-icon-button {
-  background-color: transparent;
-  cursor: default;
+	background-color: transparent;
+	cursor: default;
 }
 
 .confirm-transfer-client-employee-container {
-  background-color: #f3f4f6;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 33%;
+	background-color: #f3f4f6;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 2rem;
+	border-radius: 10px;
+	width: 33%;
 }
 
 .confirm-transfer-client-employee-text {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 .confirm-transfer-client-employee-text > p {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
 }
 
 .confirm-transfer-client-modal-actions-container {
-  justify-content: center !important;
-  width: 100%;
-  margin-top: 2rem;
+	justify-content: center !important;
+	width: 100%;
+	margin-top: 2rem;
 }
 
 .confirm-transfer-client-modal-action {
-  width: 224px;
-  height: 40px;
+	width: 224px;
+	height: 40px;
 }
 
 .data-grid-button-in-service {
-  background-color: #ffffff;
-  font-size: 18px;
-  color: black;
-  border-radius: 10px;
-  border: 1px solid #c7cad1;
+	background-color: #ffffff;
+	font-size: 18px;
+	color: black;
+	border-radius: 10px;
+	border: 1px solid #c7cad1;
 }

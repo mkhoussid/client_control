@@ -1,10 +1,10 @@
-import { IModalConfig } from "../../src/Modal";
+import { TModalConfig } from '../../Modal';
 
-const initialModalState: IModalConfig = {
-  header: null,
-  body: null,
-  onOkClick: null,
-  onCancelClick: null
+const initialModalState: TModalConfig = {
+	header: null,
+	body: null,
+	onOkClick: null,
+	onCancelClick: null,
 };
 
 export default initialModalState;
